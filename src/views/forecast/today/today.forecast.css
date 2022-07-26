@@ -1,0 +1,32 @@
+.daily_forecast_label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+ul.current_weather {
+    color: white;
+    margin-right: 10px;
+}
+
+li {
+    list-style-type: none;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    
+}
+span.title {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+.weather_icon {
+    width: 200px;
+    height: 200px;
+}

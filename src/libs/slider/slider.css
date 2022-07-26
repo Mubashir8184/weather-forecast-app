@@ -1,0 +1,138 @@
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-control {
+    z-index: 5;
+    outline: none;
+    margin: auto -20px auto 0;
+}
+
+.right-control {
+    z-index: 1;
+    outline: none;
+    margin: auto 0px auto -20px;
+}
+
+svg path {
+    fill: #2d2d73;
+}
+
+svg:hover path {
+    fill: #2d2d73;
+}
+
+.arrow-box {
+    border: 1px solid #dfe1e5;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2d2d73;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.slideshow {
+    background-color: white;
+    height: 400px;
+    width: 755px;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideshow>div {
+    display: flex;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+    background-position: 0 -200px;
+}
+
+.slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+}
+
+.slideshow:hover .mover-2 {
+    opacity: 1;
+}
+
+/* $scale: 0.7; */
+
+.card {
+    width: 255px;
+    background: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 8px rgba(black, 0.2);
+    padding: 0px;
+
+}
+
+.header {
+    height: 25%;
+    width: 100%;
+    background: #2d2d73;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin: 10px;
+}
+
+.line {
+    background: rgba(grey, 0.2);
+    height: 6px;
+    margin-top: 5px;
+}
+
+.Card_listing {
+    padding: 0px;
+}
+
+li.listing {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+span.carlisting_title {
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.card_weather_icon {
+    height: 100px;
+    width: 100px;
+}
